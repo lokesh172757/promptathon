@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Deep Blue Theme */
+        --background: 224 71% 4%;
+        /* Very dark blue, almost black */
+        --foreground: 210 40% 98%;
+        /* White */
+
+        --card: 222 47% 11%;
+        /* Darker blue for cards */
+        --card-foreground: 210 40% 98%;
+
+        --popover: 222 47% 11%;
+        --popover-foreground: 210 40% 98%;
+
+        --primary: 180 100% 50%;
+        /* Teal/Cyan */
+        --primary-foreground: 222 47.4% 11.2%;
+
+        --secondary: 217 33% 17%;
+        /* Muted blue */
+        --secondary-foreground: 210 40% 98%;
+
+        --muted: 217 33% 17%;
+        --muted-foreground: 215 20.2% 65.1%;
+
+        --accent: 180 100% 50%;
+        /* Teal for accents */
+        --accent-foreground: 222 47.4% 11.2%;
+
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+
+        --border: 217 33% 17%;
+        --input: 217 33% 17%;
+        --ring: 180 100% 50%;
+        /* Teal ring */
+
+        --radius: 0.75rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+.text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.perspective-1000 {
+    perspective: 1000px;
+}

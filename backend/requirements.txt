@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+motor
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+transformers
+torch
+scikit-learn
+newspaper3k
+requests
+emoji
+python-dotenv
+lxml[html_clean]
+email-validator
+
